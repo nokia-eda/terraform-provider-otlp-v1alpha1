@@ -1,0 +1,207 @@
+app_group:
+  - read:
+      path: /apps/otlp.eda.nokia.com
+      method: GET
+
+patch:
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: PATCH
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: PATCH
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: PATCH
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: PATCH
+
+resource_history:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1
+      method: GET
+
+resource_topology:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_topology
+      method: GET
+
+status:
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: DELETE
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: DELETE
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.otlp.v1alpha1.cluster_metric_export:
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+      method: POST
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: GET
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: PUT
+
+com.nokia.eda.otlp.v1alpha1.cluster_metric_export_list:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+      method: GET
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+      method: DELETE
+
+com.nokia.eda.otlp.v1alpha1.cluster_metric_export_deleted_resources:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/_deleted
+      method: GET
+
+com.nokia.eda.otlp.v1alpha1.cluster_receiver:
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+      method: POST
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: GET
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: PUT
+
+com.nokia.eda.otlp.v1alpha1.cluster_receiver_list:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+      method: GET
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+      method: DELETE
+
+com.nokia.eda.otlp.v1alpha1.cluster_receiver_deleted_resources:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/_deleted
+      method: GET
+
+com.nokia.eda.otlp.v1alpha1.metric_export:
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+      method: POST
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: GET
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: PUT
+
+com.nokia.eda.otlp.v1alpha1.metric_export_list:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/metricexports
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+      method: GET
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+      method: DELETE
+
+com.nokia.eda.otlp.v1alpha1.metric_export_deleted_resources:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/_deleted
+      method: GET
+
+com.nokia.eda.otlp.v1alpha1.receiver:
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+      method: POST
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: GET
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: PUT
+
+com.nokia.eda.otlp.v1alpha1.receiver_list:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+      method: GET
+  - delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+      method: DELETE
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/receivers
+      method: GET
+
+com.nokia.eda.otlp.v1alpha1.receiver_deleted_resources:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/_deleted
+      method: GET
+
+totalPaths: 25
+totalSchemas: 48
+usedSchemas: 19
+unusedSchemas: 29
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - K8SPatchOp
+  - OverlayState
+  - Resource
+  - ResourceHistoryEntry
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoElemMetadata
+  - TopoLinkEndpoint
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeState
+  - TopoSchema
+  - Topology
+  - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_metadata
+  - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_metadata
+  - com.nokia.eda.otlp.v1alpha1.MetricExport_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.MetricExport_metadata
+  - com.nokia.eda.otlp.v1alpha1.Receiver_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.Receiver_metadata

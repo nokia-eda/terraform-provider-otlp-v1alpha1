@@ -1,0 +1,110 @@
+provider:
+  name: otlp
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/otlp.eda.nokia.com
+      method: GET
+
+  cluster_metric_export:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: GET
+
+  cluster_metric_export_list:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+      method: GET
+
+  cluster_receiver:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: GET
+
+  cluster_receiver_list:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+      method: GET
+
+  metric_export:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: GET
+
+  metric_export_list:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+      method: GET
+
+  receiver:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: GET
+
+  receiver_list:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1
+      method: GET
+
+resources:
+  cluster_metric_export:
+    create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+      method: POST
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: GET
+    update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: PUT
+    delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: DELETE
+
+  cluster_receiver:
+    create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+      method: POST
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: GET
+    update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: PUT
+    delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: DELETE
+
+  metric_export:
+    create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+      method: POST
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: GET
+    update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: PUT
+    delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: DELETE
+
+  receiver:
+    create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+      method: POST
+    read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: GET
+    update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: PUT
+    delete:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: DELETE
