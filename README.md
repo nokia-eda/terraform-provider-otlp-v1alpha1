@@ -2,9 +2,9 @@
 
 terraform-provider-otlp-v1alpha1 is a terraform provider plugin for the `otlp` resource in Nokia EDA.
 
-## Installation
+## Installation and Usage
 
-TBD
+Go to <https://docs.eda.dev/latest/development/terraform/>
 
 ## Development
 
