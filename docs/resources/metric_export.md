@@ -54,10 +54,6 @@ Metrics will be sent using the Prometheus remote write protocol. (see [below for
 <a id="nestedatt--spec--exports"></a>
 ### Nested Schema for `spec.exports`
 
-Required:
-
-- `path` (String) The state DB path to export, in the format '.node.srl.interface'
-
 Optional:
 
 - `attributes` (Attributes) Allows adding static or dynamic attributes to the metrics. (see [below for nested schema](#nestedatt--spec--exports--attributes))
@@ -66,6 +62,7 @@ Optional:
 - `mappings` (Attributes List) Rules for mapping metric values (e.g., DOWN -> 1, UP -> 2). (see [below for nested schema](#nestedatt--spec--exports--mappings))
 - `metric_name` (Attributes) Regex and replacement for renaming the metric name. (see [below for nested schema](#nestedatt--spec--exports--metric_name))
 - `mode` (String) Mode defines how the metric is collected: periodic, on-change, or periodic-on-change.
+- `path` (String) The state DB path to export, in the format '.node.srl.interface'
 - `resource` (Attributes) A Custom resource to be used as a source for the metric.
 It will generate a metric with the CR attributes and a value of 1. (see [below for nested schema](#nestedatt--spec--exports--resource))
 - `where` (String) Condition for filtering the metric (e.g., 'oper-state = down').

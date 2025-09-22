@@ -896,9 +896,6 @@
                       }
                     }
                   },
-                  "required": [
-                    "path"
-                  ],
                   "type": "object"
                 },
                 "title": "Metrics Exports",
@@ -1824,9 +1821,6 @@
                       }
                     }
                   },
-                  "required": [
-                    "path"
-                  ],
                   "type": "object"
                 },
                 "title": "Metrics Exports",

@@ -423,7 +423,7 @@
                         }
                     },
                     {
-                        "name": "labelselector",
+                        "name": "label_selector",
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "a label selector string to filter the results based on CR labels"
@@ -1086,7 +1086,7 @@
                         }
                     },
                     {
-                        "name": "labelselector",
+                        "name": "label_selector",
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "a label selector string to filter the results based on CR labels"
@@ -1755,7 +1755,7 @@
                         }
                     },
                     {
-                        "name": "labelselector",
+                        "name": "label_selector",
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "a label selector string to filter the results based on CR labels"
@@ -2437,7 +2437,7 @@
                         }
                     },
                     {
-                        "name": "labelselector",
+                        "name": "label_selector",
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "a label selector string to filter the results based on CR labels"
@@ -3183,7 +3183,7 @@
                                                 {
                                                     "name": "path",
                                                     "string": {
-                                                        "computed_optional_required": "required",
+                                                        "computed_optional_required": "optional",
                                                         "description": "The state DB path to export, in the format '.node.srl.interface'"
                                                     }
                                                 },
@@ -4033,7 +4033,7 @@
                                                 {
                                                     "name": "path",
                                                     "string": {
-                                                        "computed_optional_required": "required",
+                                                        "computed_optional_required": "optional",
                                                         "description": "The state DB path to export, in the format '.node.srl.interface'"
                                                     }
                                                 },

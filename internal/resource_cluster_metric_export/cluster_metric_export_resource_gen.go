@@ -255,7 +255,7 @@ func ClusterMetricExportResourceSchema(ctx context.Context) schema.Schema {
 									Default: stringdefault.StaticString("on-change"),
 								},
 								"path": schema.StringAttribute{
-									Required:            true,
+									Optional:            true,
 									Description:         "The state DB path to export, in the format '.node.srl.interface'",
 									MarkdownDescription: "The state DB path to export, in the format '.node.srl.interface'",
 								},
