@@ -3,6 +3,34 @@ app_group:
       path: /apps/otlp.eda.nokia.com
       method: GET
 
+intent_targets:
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_topology
+      method: POST
+
 patch:
   - update:
       path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
@@ -171,37 +199,62 @@ com.nokia.eda.otlp.v1alpha1.receiver_deleted_resources:
       path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/_deleted
       method: GET
 
-totalPaths: 25
-totalSchemas: 48
-usedSchemas: 19
-unusedSchemas: 29
+totalPaths: 29
+totalSchemas: 75
+usedSchemas: 21
+unusedSchemas: 54
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
   - ErrorItem
   - ErrorResponse
+  - IntentTarget
   - K8SPatchOp
   - OverlayState
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
   - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
   - TopoElemMetadata
-  - TopoLinkEndpoint
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
   - TopoNodeGrouping
   - TopoOverlayEndpoint
   - TopoOverlayEndpointState
   - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
   - TopoOverlayLinkState
   - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
   - TopoOverlayNodeState
+  - TopoOverlayValue
   - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
   - Topology
   - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_alarms
+  - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_deviations
   - com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_metadata
   - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_alarms
+  - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_deviations
   - com.nokia.eda.otlp.v1alpha1.ClusterReceiver_metadata
   - com.nokia.eda.otlp.v1alpha1.MetricExport_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.MetricExport_alarms
+  - com.nokia.eda.otlp.v1alpha1.MetricExport_deviations
   - com.nokia.eda.otlp.v1alpha1.MetricExport_metadata
   - com.nokia.eda.otlp.v1alpha1.Receiver_DeletedResourceEntry
+  - com.nokia.eda.otlp.v1alpha1.Receiver_alarms
+  - com.nokia.eda.otlp.v1alpha1.Receiver_deviations
   - com.nokia.eda.otlp.v1alpha1.Receiver_metadata

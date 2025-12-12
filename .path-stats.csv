@@ -11,7 +11,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},PATCH,Patch,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},PUT,com.nokia.eda.otlp.v1alpha1.ClusterMetricExport,cluster_metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers,DELETE,com.nokia.eda.otlp.v1alpha1.ClusterReceiverList,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers,GET,com.nokia.eda.otlp.v1alpha1.ClusterReceiverList,cluster_receiver_list,true,true,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers,POST,com.nokia.eda.otlp.v1alpha1.ClusterReceiver,cluster_receiver,true,false,true
@@ -21,7 +23,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},PATCH,Patch,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},PUT,com.nokia.eda.otlp.v1alpha1.ClusterReceiver,cluster_receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/metricexports,GET,com.nokia.eda.otlp.v1alpha1.MetricExportList,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports,DELETE,com.nokia.eda.otlp.v1alpha1.MetricExportList,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports,GET,com.nokia.eda.otlp.v1alpha1.MetricExportList,metric_export_list,true,true,false
@@ -32,7 +36,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},PATCH,Patch,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},PUT,com.nokia.eda.otlp.v1alpha1.MetricExport,metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers,DELETE,com.nokia.eda.otlp.v1alpha1.ReceiverList,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers,GET,com.nokia.eda.otlp.v1alpha1.ReceiverList,receiver_list,true,true,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers,POST,com.nokia.eda.otlp.v1alpha1.Receiver,receiver,true,false,true
@@ -42,5 +48,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},PATCH,Patch,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},PUT,com.nokia.eda.otlp.v1alpha1.Receiver,receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/receivers,GET,com.nokia.eda.otlp.v1alpha1.ReceiverList,,false,false,false
