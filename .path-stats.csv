@@ -8,7 +8,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/_deleted,GET,com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_DeletedResources,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},DELETE,Status,cluster_metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},GET,com.nokia.eda.otlp.v1alpha1.ClusterMetricExport,cluster_metric_export,true,true,true
-/apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},PATCH,Patch,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},PATCH,com.nokia.eda.otlp.v1alpha1.ClusterMetricExport,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name},PUT,com.nokia.eda.otlp.v1alpha1.ClusterMetricExport,cluster_metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -20,7 +20,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/_deleted,GET,com.nokia.eda.otlp.v1alpha1.ClusterReceiver_DeletedResources,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},DELETE,Status,cluster_receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},GET,com.nokia.eda.otlp.v1alpha1.ClusterReceiver,cluster_receiver,true,true,true
-/apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},PATCH,Patch,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},PATCH,com.nokia.eda.otlp.v1alpha1.ClusterReceiver,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name},PUT,com.nokia.eda.otlp.v1alpha1.ClusterReceiver,cluster_receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -33,7 +33,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/_deleted,GET,com.nokia.eda.otlp.v1alpha1.MetricExport_DeletedResources,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},DELETE,Status,metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},GET,com.nokia.eda.otlp.v1alpha1.MetricExport,metric_export,true,true,true
-/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},PATCH,Patch,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},PATCH,com.nokia.eda.otlp.v1alpha1.MetricExport,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name},PUT,com.nokia.eda.otlp.v1alpha1.MetricExport,metric_export,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -45,7 +45,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/_deleted,GET,com.nokia.eda.otlp.v1alpha1.Receiver_DeletedResources,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},DELETE,Status,receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},GET,com.nokia.eda.otlp.v1alpha1.Receiver,receiver,true,true,true
-/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},PATCH,Patch,,false,false,false
+/apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},PATCH,com.nokia.eda.otlp.v1alpha1.Receiver,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name},PUT,com.nokia.eda.otlp.v1alpha1.Receiver,receiver,true,false,true
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_targets,GET,IntentTargets,,false,false,false

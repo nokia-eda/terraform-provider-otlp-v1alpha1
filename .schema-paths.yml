@@ -31,20 +31,6 @@ k8_s_topology_request:
       path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}/_topology
       method: POST
 
-patch:
-  - update:
-      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
-      method: PATCH
-  - update:
-      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
-      method: PATCH
-  - update:
-      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
-      method: PATCH
-  - update:
-      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
-      method: PATCH
-
 resource_history:
   - read:
       path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_revs
@@ -107,6 +93,9 @@ com.nokia.eda.otlp.v1alpha1.cluster_metric_export:
   - update:
       path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
       method: PUT
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+      method: PATCH
 
 com.nokia.eda.otlp.v1alpha1.cluster_metric_export_list:
   - read:
@@ -131,6 +120,9 @@ com.nokia.eda.otlp.v1alpha1.cluster_receiver:
   - update:
       path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
       method: PUT
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+      method: PATCH
 
 com.nokia.eda.otlp.v1alpha1.cluster_receiver_list:
   - read:
@@ -155,6 +147,9 @@ com.nokia.eda.otlp.v1alpha1.metric_export:
   - update:
       path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
       method: PUT
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+      method: PATCH
 
 com.nokia.eda.otlp.v1alpha1.metric_export_list:
   - read:
@@ -182,6 +177,9 @@ com.nokia.eda.otlp.v1alpha1.receiver:
   - update:
       path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
       method: PUT
+  - update:
+      path: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+      method: PATCH
 
 com.nokia.eda.otlp.v1alpha1.receiver_list:
   - read:
@@ -201,8 +199,8 @@ com.nokia.eda.otlp.v1alpha1.receiver_deleted_resources:
 
 totalPaths: 29
 totalSchemas: 75
-usedSchemas: 21
-unusedSchemas: 54
+usedSchemas: 20
+unusedSchemas: 55
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
@@ -211,6 +209,7 @@ unusedSchemaList:
   - IntentTarget
   - K8SPatchOp
   - OverlayState
+  - Patch
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
