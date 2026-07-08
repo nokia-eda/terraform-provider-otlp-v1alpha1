@@ -1,0 +1,63 @@
+datasources:
+  - model_name: app_group
+    oas_endpoint: /apps/otlp.eda.nokia.com
+    oas_schema: AppGroup
+  - model_name: resource_list
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1
+    oas_schema: ResourceList
+  - model_name: cluster_metric_export_list
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterMetricExportList
+  - model_name: cluster_metric_export
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterMetricExport
+  - model_name: cluster_receiver_list
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterReceiverList
+  - model_name: cluster_receiver
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/{name}
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterReceiver
+  - model_name: metric_export_list
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+    oas_schema: com.nokia.eda.otlp.v1alpha1.MetricExportList
+  - model_name: metric_export
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/{name}
+    oas_schema: com.nokia.eda.otlp.v1alpha1.MetricExport
+  - model_name: receiver_list
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ReceiverList
+  - model_name: receiver
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/{name}
+    oas_schema: com.nokia.eda.otlp.v1alpha1.Receiver
+
+resources:
+  - model_name: cluster_metric_export
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterMetricExport
+  - model_name: cluster_receiver
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers
+    oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterReceiver
+  - model_name: metric_export
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports
+    oas_schema: com.nokia.eda.otlp.v1alpha1.MetricExport
+  - model_name: receiver
+    oas_endpoint: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers
+    oas_schema: com.nokia.eda.otlp.v1alpha1.Receiver
+
+qualified:
+  datasources:
+    - oas_schema: IntentTargets
+      get: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_targets
+    - oas_schema: ResourceHistory
+      get: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/{name}/_revs
+    - oas_schema: UIResult
+      get: /apps/otlp.eda.nokia.com/v1alpha1/_ui/{pathname}
+    - oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterMetricExport_DeletedResources
+      get: /apps/otlp.eda.nokia.com/v1alpha1/clustermetricexports/_deleted
+    - oas_schema: com.nokia.eda.otlp.v1alpha1.ClusterReceiver_DeletedResources
+      get: /apps/otlp.eda.nokia.com/v1alpha1/clusterreceivers/_deleted
+    - oas_schema: com.nokia.eda.otlp.v1alpha1.MetricExport_DeletedResources
+      get: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/metricexports/_deleted
+    - oas_schema: com.nokia.eda.otlp.v1alpha1.Receiver_DeletedResources
+      get: /apps/otlp.eda.nokia.com/v1alpha1/namespaces/{namespace}/receivers/_deleted
+  resources:
